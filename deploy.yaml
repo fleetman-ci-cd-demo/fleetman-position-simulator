@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: position-simulator
-        image: virtualpairprogrammers/fleetman-ci-cd-demo-fleetman-position-simulator:${BUILD_ID}
+        image: ${REPOSITORY_TAG}
         env:
         - name: SPRING_PROFILES_ACTIVE
           value: production-microservice
