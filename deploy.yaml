@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: position-simulator
-        image: richardchesterwood/k8s-fleetman-position-simulator:release2
+        image: virtualpairprogrammers/fleetman-ci-cd-demo-fleetman-position-simulator:${BUILD_ID}
         env:
         - name: SPRING_PROFILES_ACTIVE
           value: production-microservice
