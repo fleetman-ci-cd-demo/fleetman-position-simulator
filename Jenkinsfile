@@ -30,6 +30,9 @@ pipeline {
       }
 
       stage('Deploy to Cluster') {
+         when{
+            branch 'master'
+         }
           steps {
                     sh 'envsubst < ${WORKSPACE}/deploy.yaml | kubectl apply -f -'
           }
