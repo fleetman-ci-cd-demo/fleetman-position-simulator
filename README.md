@@ -9,3 +9,5 @@ See the full course and lots more amazing stuff at VirtualPairProgrammers.com.
 update to make sure simulator build kicks off 
 
 test again
+
+This should enable jenkins to kick off pipline build - but not deploy this service to the production cluster. 
